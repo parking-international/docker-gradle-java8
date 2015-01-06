@@ -50,11 +50,11 @@ CMD ["clean", "war"]
 To build this image yourself, run...
  
 ```bash
-docker build github.com/niaquinto/docker-gradle
+docker build github.com/ronnieguha/docker-gradle
 ```
 
 Or, you can pull the image from the central docker repository by using... 
 
 ```bash
-docker pull niaquinto/gradle
+docker pull nisostech/docker-gradle
 ```
