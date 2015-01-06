@@ -1,5 +1,5 @@
 FROM dockerfile/java:oracle-java7
-MAINTAINER Nicholas Iaquinto <nickiaq@gmail.com>
+MAINTAINER Nicholas Iaquinto <guha.ronnie@gmail.com>
 
 # In case someone loses the Dockerfile
 RUN rm -rf /etc/Dockerfile
@@ -7,10 +7,10 @@ ADD Dockerfile /etc/Dockerfile
 
 # Gradle
 WORKDIR /usr/bin
-RUN wget https://services.gradle.org/distributions/gradle-2.1-all.zip && \
-    unzip gradle-2.1-all.zip && \
-    ln -s gradle-2.1 gradle && \
-    rm gradle-2.1-all.zip
+RUN wget https://services.gradle.org/distributions/gradle-2.2.1-all.zip && \
+    unzip gradle-2.2.1-all.zip && \
+    ln -s gradle-2.2.1 gradle && \
+    rm gradle-2.2.1-all.zip
 
 # Set Appropriate Environmental Variables
 ENV GRADLE_HOME /usr/bin/gradle
