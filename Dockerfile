@@ -1,5 +1,5 @@
 FROM dockerfile/java:oracle-java7
-MAINTAINER Nicholas Iaquinto <guha.ronnie@gmail.com>
+MAINTAINER Ronnie Guha <guha.ronnie@gmail.com>
 
 # In case someone loses the Dockerfile
 RUN rm -rf /etc/Dockerfile
