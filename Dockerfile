@@ -16,9 +16,6 @@ RUN wget https://services.gradle.org/distributions/gradle-2.2.1-all.zip && \
 ENV GRADLE_HOME /usr/bin/gradle
 ENV PATH $PATH:$GRADLE_HOME/bin
 
-# Set your desired user as default
-USER vagrant
-
 # Default command is "/usr/bin/gradle -version" on /app dir
 # (ie. Mount project at /app "docker --rm -v /path/to/app:/app gradle <command>")
 RUN mkdir /app
