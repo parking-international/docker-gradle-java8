@@ -1,4 +1,4 @@
-FROM dockerfile/java:oracle-java8
+FROM java:8-jdk
 MAINTAINER Pierre Vincent
 
 # In case someone loses the Dockerfile
