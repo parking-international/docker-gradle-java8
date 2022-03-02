@@ -1,0 +1,21 @@
+/bin/
+.project
+build/classes/main/co/net/beparking/entities/BpCliente.class
+build/classes/main/co/net/beparking/entities/BpClienteAdicional.class
+build/classes/main/co/net/parking/entities/Alerta.class
+build/classes/main/co/net/parking/entities/Empleado.class
+build/classes/main/co/net/parking/entities/Parqueadero.class
+build/classes/main/co/net/parking/entities/RangoFactura.class
+build/classes/main/co/net/parking/entities/Resolucion.class
+build/classes/main/co/net/parking/entities/SeguridadContacto.class
+build/classes/main/co/net/parking/entities/Tercero.class
+build/classes/main/co/net/parking/entities/TransDatafono.class
+build/libs/parking_modelo.jar
+.classpath
+.settings/org.eclipse.wst.common.component
+.settings/org.eclipse.wst.common.project.facet.core.xml
+*.class
+/.gradle/
+/build/
+.settings/org.eclipse.jdt.core.prefs~Stashed changes
+.settings/org.eclipse.buildship.core.prefs~Stashed changes

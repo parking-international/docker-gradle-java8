@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="UP_TRANSACCION_PARKING">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/jdbc/jdbcparking2</jta-data-source>
+
+		<!-- entidades de parking -->
+
+		<class>co.net.parking.entities.InicioTurno</class>
+		<class>co.net.parking.entities.InicioDia</class>
+		<class>co.net.parking.entities.Empleado</class>
+		<class>co.net.parking.entities.ErrorLog</class>
+		<class>co.net.parking.entities.Parqueadero</class>
+		<class>co.net.parking.entities.EntradaV126</class>
+		<class>co.net.parking.entities.ParkingTarifasParquedero</class>
+		<class>co.net.parking.entities.CierreTurno</class>
+		<class>co.net.parking.entities.TransV130</class>
+		<class>co.net.parking.entities.TransDatafono</class>
+		<class>co.net.parking.entities.CierreDia</class>
+		<class>co.net.parking.entities.RangoFactura2</class>
+		<class>co.net.parking.entities.ReimpresionComprobante</class>
+		<class>co.net.parking.entities.Parqueadero</class>
+		<class>co.net.parking.entities.IngresoBicicletas</class>
+		<class>co.net.parking.entities.RegCompPerdido</class>
+		
+
+		<properties>
+			<!-- Properties for Hibernate -->
+			<!-- <property name="hibernate.hbm2ddl.auto" value="update" /> -->
+			<!-- <property name="hibernate.show_sql" value="true" /> -->
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.SQLServer2012Dialect" />
+			<!-- <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform" 
+				/> -->
+		</properties>
+	</persistence-unit>
+	<persistence-unit name="UP_BEPARKING_BP">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/jdbc/jdbcbeparking</jta-data-source>
+
+		<!-- entidades de Be Parking -->
+		<class>co.net.beparking.entities.BpCliente</class>
+		<class>co.net.beparking.entities.BpClienteAdicional</class>
+		<class>co.net.beparking.entities.BpTransaccion</class>
+		<class>co.net.beparking.entities.BpExtractoPunto</class>
+		<class>co.net.beparking.entities.BpBono</class>
+		<class>co.net.beparking.entities.RedencionBpBono</class>
+		<class>co.net.beparking.entities.PerfilSms</class>
+
+		<properties>
+			<!-- Properties for Hibernate -->
+			<!-- <property name="hibernate.hbm2ddl.auto" value="update" /> -->
+			<!-- <property name="hibernate.show_sql" value="true" /> -->
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.SQLServer2012Dialect" />
+			<!-- <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform" 
+				/> -->
+		</properties>
+	</persistence-unit>
+</persistence>

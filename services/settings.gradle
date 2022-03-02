@@ -1,0 +1,13 @@
+rootProject.name = 'proyectoBahias'
+
+include 'proyectoBahias-ejb'
+include 'proyectoBahias-web'
+
+project(':proyectoBahias-ejb').projectDir = "$rootDir/proyectoBahias-ejb" as File
+project(':proyectoBahias-web').projectDir = "$rootDir/proyectoBahias-web" as File
+
+include ':parking_modelo'
+project(':parking_modelo').projectDir = "/../parking_modelo/" as File
+
+include ':parking_util'
+project(':parking_util').projectDir = "/../parking_util/" as File

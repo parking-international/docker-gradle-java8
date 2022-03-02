@@ -1,0 +1,16 @@
+*.class
+# Package Files #
+*.jar
+*.war
+*.ear
+*.bin
+*.classpath
+build/
+gradle/
+.gradle/
+.settings/
+pagoDigital-ejb/bin/
+pagoDigital-web/bin/
+!.gitignore
+_build.gradle
+init.bat

@@ -1,0 +1,18 @@
+description = 'parking_modelo: JPA Module'
+apply plugin: 'java'
+apply plugin: 'eclipse';
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+  repositories {
+      	jcenter()
+    	mavenCentral()
+  }
+  
+  dependencies{
+	compile group: 'javax.mail', name: 'javax.mail-api', version: '1.5.5'
+	// https://mvnrepository.com/artifact/com.eaio.uuid/uuid
+compile group: 'com.eaio.uuid', name: 'uuid', version: '3.2'
+	
+  }
