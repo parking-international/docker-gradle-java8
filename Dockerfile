@@ -21,4 +21,4 @@ ENV PATH $PATH:$GRADLE_HOME/bin
 RUN mkdir /app
 WORKDIR /app
 ENTRYPOINT ["gradle"] 
-CMD ["-version", "-clean", "-war"]
+CMD ["clean", "war"]
