@@ -7,7 +7,7 @@ project(':proyectoBahias-ejb').projectDir = "$rootDir/proyectoBahias-ejb" as Fil
 project(':proyectoBahias-web').projectDir = "$rootDir/proyectoBahias-web" as File
 
 include ':parking_modelo'
-project(':parking_modelo').projectDir = "/../parking_modelo/" as File
+project(':parking_modelo').projectDir = "/parking_modelo/" as File
 
 include ':parking_util'
-project(':parking_util').projectDir = "/../parking_util/" as File
+project(':parking_util').projectDir = "/parking_util/" as File
